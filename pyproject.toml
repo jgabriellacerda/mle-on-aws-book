@@ -1,0 +1,41 @@
+[project]
+name = "mle_on_aws_book"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "João Gabriel Lacerda Romão",email = "gabrielromao98@live.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "pytorch_cpu"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "explicit"
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.14.1"
+poetry = "^2.0.0"
+sagify = "^0.25.4"
+ipykernel = "^6.29.5"
+torch = {version = "^2.5.1", source = "pytorch_cpu"}
+flask = "^3.1.0"
+
+[tool.poetry]
+package-mode = false
+
+[tool.mypy]
+exclude = [
+    'venv/*',
+]

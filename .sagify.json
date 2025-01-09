@@ -1,0 +1,8 @@
+{
+    "image_name": "mle-on-aws-book",
+    "aws_profile": "default",
+    "aws_region": "us-east-1",
+    "python_version": "3.11",
+    "requirements_dir": "pyproject.toml",
+    "sagify_module_dir": "."
+}
