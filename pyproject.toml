@@ -1,5 +1,5 @@
 [project]
-name = "mle_on_aws_book"
+name = "scripts"
 version = "0.1.0"
 description = ""
 authors = [
@@ -32,10 +32,12 @@ ipykernel = "^6.29.5"
 torch = {version = "^2.5.1", source = "pytorch_cpu"}
 flask = "^3.1.0"
 
-[tool.poetry]
-package-mode = false
 
 [tool.mypy]
 exclude = [
     'venv/*',
 ]
+
+[project.scripts]
+build = "scripts.build:build"
+local = "scripts.local:local"
